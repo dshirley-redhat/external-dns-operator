@@ -1,5 +1,5 @@
 # Build the manager binary
-FROM image-registry.openshift-image-registry.svc:5000/golang:1.22 as builder
+FROM image-registry.openshift-image-registry.svc:5000/cicd-tools/golang:1.22 as builder
 
 WORKDIR /opt/app-root/src
 COPY . .
